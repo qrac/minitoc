@@ -26,6 +26,24 @@ CDN を読み込み `minitoc.init()` で実行します。
 </div>
 ```
 
+## Methods
+
+| Method           | Result                     |
+| ---------------- | -------------------------- |
+| `minitoc.init()` | 見出しを検索して目次を出力 |
+
+## Options
+
+<!-- prettier-ignore -->
+```js
+// Example
+minitoc.init({
+  tocSelector: "[data-toc]", // 目次を出力するセレクター
+  containerSelector: "[data-toc-container]", // 見出しを検索するセレクター
+  headingSelector: "h1, h2, h3", // 検索対象の見出し
+})
+```
+
 ## Respect
 
 - [jgallen23/toc: jQuery Table of Contents Plugin](https://github.com/jgallen23/toc)
