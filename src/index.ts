@@ -62,8 +62,6 @@ const minitoc = (() => {
       const body = html.body
       const list = <Node>body.querySelector("ul")
 
-      console.log(list)
-
       this.targetToc?.appendChild(list)
     }
   }
