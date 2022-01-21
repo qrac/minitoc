@@ -1,8 +1,10 @@
 # minitoc
 
-Generate a table of contents by searching for headings.
+見出しを検索して目次を生成するシンプルな JavaScript ライブラリ。
 
 ## How To Use
+
+CDN を読み込んみ `minitoc.init()` で実行します。
 
 <!-- prettier-ignore -->
 ```html
@@ -12,8 +14,10 @@ Generate a table of contents by searching for headings.
 
 <!-- prettier-ignore -->
 ```html
+<!-- 目次を出力したい場所に data-toc 属性を付与します -->
 <div data-toc></div>
 
+<!-- 見出しを検索したい場所に data-toc-container 属性を付与します -->
 <div data-toc-container>
   <h2>テストh2</h2>
   <h3>テストh3</h3>
