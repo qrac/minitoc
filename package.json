@@ -1,0 +1,58 @@
+{
+  "name": "minitoc",
+  "description": "Generate a table of contents by searching for headings.",
+  "version": "0.1.0",
+  "license": "MIT",
+  "cdn": "dist/minitoc.js",
+  "main": "dist/minitoc.cjs.js",
+  "module": "dist/minitoc.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://github.com/qrac/minitoc",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qrac/minitoc"
+  },
+  "bugs": {
+    "url": "https://github.com/qrac/minitoc/issues"
+  },
+  "keywords": [
+    "toc",
+    "javascript",
+    "vanillajs",
+    "minitoc"
+  ],
+  "author": {
+    "name": "Qrac",
+    "url": "https://qrac.jp"
+  },
+  "organization": {
+    "name": "QRANOKO",
+    "url": "https://qranoko.jp"
+  },
+  "scripts": {
+    "dev": "rollup -c -w",
+    "build": "NODE_ENV=production rollup -c && tsc",
+    "prepublishOnly": "npm run build",
+    "clean": "trash ./dist ./lib"
+  },
+  "prettier": {
+    "semi": false
+  },
+  "browserslist": [
+    "last 1 Chrome versions",
+    "last 1 Edge versions",
+    "last 1 Firefox versions",
+    "last 1 Safari versions",
+    "last 1 iOS versions",
+    "last 1 ChromeAndroid versions"
+  ],
+  "devDependencies": {
+    "esbuild": "^0.14.12",
+    "rollup": "^2.64.0",
+    "rollup-plugin-esbuild": "^4.8.2",
+    "typescript": "^4.5.5"
+  }
+}
