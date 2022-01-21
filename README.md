@@ -4,7 +4,7 @@
 
 ## How To Use
 
-CDN を読み込んみ `minitoc.init()` で実行します。
+CDN を読み込み `minitoc.init()` で実行します。
 
 <!-- prettier-ignore -->
 ```html
